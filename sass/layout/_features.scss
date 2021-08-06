@@ -1,0 +1,38 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+  }
+  &__item-wallpaper {
+    background-color: $features-wall-color;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    height: 120px;
+  }
+
+  // Изменяет текст заголовков h3
+  &__title {
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  // Изменяет текст
+  &__text {
+    letter-spacing: 0.03em;
+    color: $features-text-color;
+    margin-top: 10px;
+  }
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__item {
+    width: 270px;
+  }
+}

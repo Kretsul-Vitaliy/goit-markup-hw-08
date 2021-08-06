@@ -1,0 +1,82 @@
+//header
+.header {
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+  max-width: 1600px;
+  margin: 0px auto;
+
+  a:hover,
+  a:focus {
+    color: $accent-color;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item {
+  }
+  &__menu-link {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    // Добавляем анимацию
+    transition: color 250ms $transition-timing-function;
+  }
+  &__menu-list &__menu-item + &__menu-item {
+    margin-left: 50px;
+  }
+  &__menu-link--active {
+    color: $accent-color;
+  }
+  &__line--active {
+    position: relative;
+    bottom: -33px;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $accent-color;
+      bottom: 0px;
+      left: 0px;
+      position: absolute;
+    }
+  }
+  &__contact-list {
+    display: flex;
+    margin-left: auto;
+  }
+  &__contact-item {
+  }
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $contact-text-color;
+    padding: 32px 0px;
+    // Добавляем анимацию
+    transition: color 250ms $transition-timing-function;
+  }
+  &__contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    // Добавляем анимацию
+    transition: fill 250ms $transition-timing-function;
+  }
+  &__contact-list &__contact-item + &__contact-item {
+    margin-left: 50px;
+  }
+}

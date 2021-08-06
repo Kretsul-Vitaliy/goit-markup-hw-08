@@ -1,0 +1,37 @@
+.services {
+  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0px auto;
+
+  &__list {
+    display: flex;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__item + &__item {
+    margin-left: 30px;
+  }
+  // Наложение подписи в секции чем мы занимаемся поверх изображения
+  &__desktop {
+    position: relative;
+  }
+  &__thumb {
+    background: $services-background-tmumb;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-white-color;
+  }
+}

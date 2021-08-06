@@ -1,0 +1,33 @@
+.client {
+  background-color: $client-background-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $social-icon-color;
+    border-radius: 4px;
+    fill: $social-icon-color;
+    // Добавляем анимацию
+    transition: fill 250ms $transition-timing-function,
+      border 250ms $transition-timing-function;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+  &__item + &__item {
+    margin-left: 30px;
+  }
+}

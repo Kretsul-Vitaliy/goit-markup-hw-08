@@ -1,0 +1,55 @@
+//Изменяет фон заголовка h1
+.hero {
+  background-color: $hero-background-color;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/header-background.jpg);
+
+  //Изменяет шрифт Эффективные решения для вашего бизнеса
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-white-color;
+    margin-bottom: 30px;
+  }
+  //Кнопка заказать услугу в секции Hero
+  &__button {
+    color: $button-white-color;
+    background-color: $accent-color;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    min-height: 50px;
+    //Добавляем анимацию
+    transition: box-shadow 250ms $transition-timing-function;
+
+    &:hover,
+    &:focus {
+      //При наведении курсора делает кнопку другим цветом
+      background-color: $cursor-button-color;
+      //Добавляем анимацию
+      animation-iteration-count: infinite;
+    }
+
+    //Добавляем анимацию
+    transition: background-color 250ms $transition-timing-function,
+      color 250ms $transition-timing-function,
+      opacity 250ms $transition-timing-function;
+  }
+}

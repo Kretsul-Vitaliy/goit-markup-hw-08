@@ -1,0 +1,33 @@
+.footer__social-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-white-color;
+}
+.footer__social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__social-link {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: $footer-icon-color;
+  fill: $footer-social-link-fill;
+  // Добавляем анимацию
+  transition: background-color 250ms $transition-timing-function,
+    fill 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer__social-item + .footer__social-item {
+  margin-left: 10px;
+}

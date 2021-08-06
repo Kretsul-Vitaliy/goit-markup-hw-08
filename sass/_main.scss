@@ -1,0 +1,24 @@
+//Vendors
+@import './vendors/_modern-normalize.css';
+
+//Utils
+@import './utils/variable';
+@import './utils/visually-hidden';
+
+//Base
+@import './base/common';
+@import './base/container';
+
+//Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/footer';
+@import './layout/portfolio';
+@import './layout/client';
+
+//Components
+@import './components/modal.window';
+@import './components/features';
+@import './components/services';
+@import './components/team';
+@import './components/form.send.button';
