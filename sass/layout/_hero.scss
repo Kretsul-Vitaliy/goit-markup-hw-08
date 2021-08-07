@@ -1,16 +1,16 @@
-//Изменяет фон заголовка h1
+//mobile
 .hero {
-  background-color: $hero-background-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background: {
+    color: $hero-background-color;
+    image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/mobile/hero/bg-main.jpg);
+    size: cover;
+  }
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/header-background.jpg);
 
   //Изменяет шрифт Эффективные решения для вашего бизнеса
   &__title {
@@ -32,7 +32,7 @@
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     border-radius: 4px;
     min-width: 200px;
     min-height: 50px;
@@ -43,6 +43,8 @@
     &:focus {
       //При наведении курсора делает кнопку другим цветом
       background-color: $cursor-button-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
       //Добавляем анимацию
       animation-iteration-count: infinite;
     }
@@ -51,5 +53,54 @@
     transition: background-color 250ms $transition-timing-function,
       color 250ms $transition-timing-function,
       opacity 250ms $transition-timing-function;
+  }
+
+  //mobile retina
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/mobile/hero/bg-main@2x.jpg);
+  }
+  //Tablet
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/tablet/hero/bg-main.jpg);
+    //Tablet retina
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/tablet/hero/bg-main@2x.jpg);
+    }
+  }
+  //Desktop
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/desktop/hero/bg-main.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    //Desktop retina
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/desktop/hero/bg-main@2x.jpg);
+    }
   }
 }

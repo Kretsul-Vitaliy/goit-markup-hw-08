@@ -4,7 +4,13 @@
   margin: 0px auto;
 
   &__list {
-    display: flex;
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
   &__title {
     margin-bottom: 50px;
@@ -33,5 +39,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $title-white-color;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
   }
 }

@@ -1,18 +1,29 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    @media screen and (min-width: $desktop) {
+    }
   }
   &__item-wallpaper {
     background-color: $features-wall-color;
     margin-bottom: 30px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     height: 120px;
+    display: flex;
   }
 
   // Изменяет текст заголовков h3
@@ -21,18 +32,35 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   // Изменяет текст
   &__text {
     letter-spacing: 0.03em;
     color: $features-text-color;
     margin-top: 10px;
+    padding-right: 5px;
   }
+
   &__item + &__item {
-    margin-left: 30px;
   }
 
   &__item {
-    width: 270px;
+    @media screen and (min-width: $mobile) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      // margin-left: 15px;
+      width: calc((100% - 8 * 15px) / 4);
+    }
   }
 }

@@ -10,8 +10,14 @@
     color: $accent-color;
   }
   &__box {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+    }
   }
   &__adress {
     margin-right: 70px;

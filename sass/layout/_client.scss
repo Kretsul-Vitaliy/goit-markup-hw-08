@@ -7,10 +7,19 @@
     margin-bottom: 50px;
   }
   &__list {
-    display: flex;
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
   &__link {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
@@ -25,6 +34,14 @@
     &:focus {
       fill: $accent-color;
       border: 1px solid $accent-color;
+      display: flex;
+    }
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
     }
   }
   &__item + &__item {
