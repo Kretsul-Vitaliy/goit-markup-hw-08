@@ -1,64 +1,108 @@
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 34px;
-}
+.btn-portfolio {
+  @extend %btn;
 
-// Изменяет в Porffolio текст кнопок фильтра
-.portfolo__list-btn button {
-  display: inline-block;
-  border: 1px solid transparent;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  //identical to box height, or 162%
-  text-align: center;
+  line-height: 1.63;
   letter-spacing: 0.03em;
-  background-color: $portfolio-button-color;
-  //shadow-middle
-  border-radius: 4px;
+
+  color: $text-color;
+  background: $portfolio-button-color;
+  border-color: transparent;
   padding: 6px 22px;
-  box-shadow: none;
-  color: currentColor;
-  //Добавляем анимацию
+
   transition: background-color 250ms $transition-timing-function,
     box-shadow 250ms $transition-timing-function,
     color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $button-white-color;
+    background: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+// // Изменяет в Porffolio текст кнопок фильтра
+.portfolo__list-btn {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__item-btn {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 .portfolio__item-btn--active button {
   background-color: $accent-color;
   color: $text-color-white;
 }
-.portfolo__list-btn {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  button:hover,
-  button:focus {
-    background-color: $accent-color;
-    color: $primary-white-color;
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
-
-.portfolio__item-btn + .portfolio__item-btn {
-  margin-left: 8px;
-}
-
 .portfolio__industries-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: stretch;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .portfolio__industries-item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .portfolio__industries-link {
+    display: flex;
+    flex-direction: column;
+  }
+
   margin-left: 30px;
   margin-top: 30px;
-  display: block;
   box-shadow: none;
-  //Добавляем анимацию
+  //   //Добавляем анимацию
   transition: box-shadow 250ms $transition-timing-function;
   &:hover,
   &:focus {
@@ -90,37 +134,44 @@
   overflow: auto;
   transform: translateY(101%);
   transition: transform 250ms, color 250ms $transition-timing-function;
-}
-.portfolio__thumb {
   position: absolute;
   top: 0;
   left: 0;
 }
+// .portfolio__thumb {
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+// }
 .portfolio__industries-img {
   position: relative;
   overflow: hidden;
 }
 
 .portfolio__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  //identical to box height, or 200%
-  letter-spacing: 0.06em;
-  color: $text-color;
+  @include fontStyle(18px, 2, var(--title-text-color), 0.06em, 700);
+  //   font-style: normal;
+  //   font-weight: bold;
+  //   font-size: 18px;
+  //   line-height: 36px;
+  //   //identical to box height, or 200%
+  //   letter-spacing: 0.06em;
+  //   color: $text-color;
 }
 .portfolio__box {
   padding: 20px 24px;
   border: 1px solid $border-portfolio-color;
   border-top: none;
+  flex-grow: 1;
 }
+
 .portfolio__classification {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  // identical to box height, or 187%
-  letter-spacing: 0.03em;
-  color: $portfolio-color-title;
+  @include fontStyle(16px, 1.87, var(--primary-text-color), 0.03em);
+  //   font-style: normal;
+  //   font-weight: normal;
+  //   font-size: 16px;
+  //   line-height: 30px;
+  //   // identical to box height, or 187%
+  //   letter-spacing: 0.03em;
+  //   color: $portfolio-color-title;
 }

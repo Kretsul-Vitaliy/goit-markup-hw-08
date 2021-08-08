@@ -7,10 +7,8 @@
     <title>WebStudio</title>
     <link rel="stylesheet" type="text/css" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap&subset=cyrillic"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <!-- Header -->
@@ -118,15 +116,19 @@
         <h1 class="is-hidden">Эффективные решения для вашего бизнеса портфолио</h1>
         <!-- Список фильтров -->
         <ul class="portfolo__list-btn">
-            <li class="portfolio__item-btn portfolio__item-btn--active" ><button type="button">Все</button></li>
-            <li class="portfolio__item-btn" ><button type="button">Веб-сайты</button></li>
-            <li class="portfolio__item-btn" ><button type="button">Приложения</button></li>
-            <li class="portfolio__item-btn" ><button type="button">Дизайн</button></li>
-            <li class="portfolio__item-btn" ><button type="button">Маркетинг</button></li>
+            <li class="portfolio__item-btn portfolio__item-btn--active" >
+                <button class="btn-portfolio" type="button">Все
+
+                </button>
+            </li>
+            <li class="portfolio__item-btn" ><button class="btn-portfolio" type="button">Веб-сайты</button></li>
+            <li class="portfolio__item-btn" ><button class="btn-portfolio" type="button">Приложения</button></li>
+            <li class="portfolio__item-btn" ><button class="btn-portfolio" type="button">Дизайн</button></li>
+            <li class="portfolio__item-btn" ><button class="btn-portfolio" type="button">Маркетинг</button></li>
         </ul>
         <!-- Список портфолио -->
         <ul class="portfolio__industries-list">
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                <div class="portfolio__industries-img">
                    
                     <picture>
@@ -153,9 +155,9 @@
                 <div class="portfolio__box"> <h3 class="portfolio__title">Технокряк</h3>
                 <p class="portfolio__classification">Веб-сайт</p></div></a>
             </li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
-                    <picture>
+                         <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-1.jpg 1x,
                                                                             ./images/desktop/portfolio/img-1@2x.jpg 2x">
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-1.webp 1x,
@@ -173,15 +175,15 @@
                                                                             ./images/mobile/portfolio/img-1@2x.webp 2x">
                         <img src="./images/desktop/portfolio/img-1.jpg" alt="Постер New Orlean vs Golden Star">
                    
-                    </picture>
+                     </picture>
                     
-                    <p class="portfolio__thumb portfolio__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                шпионажа и атак на защищённые сервера конкурентов.</p>
+                            <p class="portfolio__thumb portfolio__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                        шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
                 <div class="portfolio__box"> <h3 class="portfolio__title">Постер <span lang="en">New Orlean vs Golden Star</span> </h3>
                 <p class="portfolio__classification">Дизайн</p></div></a>
             </li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-2.jpg 1x,
@@ -209,7 +211,7 @@
                 <div class="portfolio__box"> <h3 class="portfolio__title">Ресторан <span lang="en">Seafood</span></h3>
                 <p class="portfolio__classification">Приложение</p></div>
             </a></li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-3.jpg 1x,
@@ -237,7 +239,7 @@
                 <div class="portfolio__box"> <h3 class="portfolio__title">Проект <span lang="en">Prime</span> </h3>
                 <p class="portfolio__classification">Маркетинг</p></div>
             </a></li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-4.jpg 1x,
@@ -265,7 +267,7 @@
                 <div class="portfolio__box"> <h3 class="portfolio__title">Проект <span lang="en">Boxes</span></h3>
                 <p class="portfolio__classification">Приложение</p></div>
             </a></li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-5.jpg 1x,
@@ -293,7 +295,7 @@
                 <div class="portfolio__box"> <h3 class="portfolio__title" lang="en">Inspiration has no Borders</h3>
                 <p class="portfolio__classification">Веб-сайт</p></div>
             </a></li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-6.jpg 1x,
@@ -321,7 +323,7 @@
                 <div class="portfolio__box"><h3 class="portfolio__title">Издание <span lang="en">Limited Edition</span></h3>
                 <p class="portfolio__classification">Дизайн</p></div>
             </a></li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-7.jpg 1x,
@@ -349,7 +351,7 @@
                 <div class="portfolio__box"> <h3 class="portfolio__title">Проект <span lang="en">LAB</span></h3>
                 <p class="portfolio__classification">Маркетинг</p></div>
             </a></li>
-            <li><a class="portfolio__industries-item" href="">
+            <li class="portfolio__industries-item"><a class="portfolio__industries-link" href="">
                 <div class="portfolio__industries-img">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/desktop/portfolio/img-8.jpg 1x,
