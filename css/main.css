@@ -500,7 +500,7 @@ summary {
 .modal-form__modal-checkbox {
   width: 16px;
   height: 15px;
-  border: 2px solid var(--text-color);
+  border: 2px solid #212121;
   display: block;
   border-radius: 2px;
   margin-right: 8px;
@@ -526,7 +526,7 @@ summary {
   line-height: 24px;
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
-  color: var(--portfolio-color-title);
+  color: #757575;
   display: inline-block;
 }
 
@@ -853,7 +853,7 @@ img {
   }
 }
 
-.close-btn {
+.close-mobile {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -862,12 +862,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:focus, .close-btn:hover {
-  fill: var(--accent-color);
+.close-mobile:focus, .close-mobile:hover {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 767px) {
-  .close-btn {
+  .close-mobile {
     display: none;
   }
 }
