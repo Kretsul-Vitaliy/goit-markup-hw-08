@@ -638,18 +638,31 @@ img {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  height: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .header__box {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__box {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__box {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+  }
 }
 
 .header__menu {
   align-items: center;
   display: flex;
-}
-
-@media screen and (min-width: 1200px) {
-  .header__menu {
-    display: flex;
-  }
 }
 
 .header__menu-list {

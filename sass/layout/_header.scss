@@ -13,14 +13,18 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    height: 60px;
+
     // justify-content: center;
     @media screen and (min-width: $mobile) {
+      height: 60px;
     }
     @media screen and (min-width: $tablet) {
+      height: 60px;
     }
     @media screen and (min-width: $desktop) {
-      // display: flex;
+      display: flex;
+      justify-content: center;
+      height: 80px;
     }
   }
   &__menu {
@@ -32,7 +36,7 @@
     @media screen and (min-width: $tablet) {
     }
     @media screen and (min-width: $desktop) {
-      display: flex;
+      // display: flex;
     }
   }
   &__menu-list {
