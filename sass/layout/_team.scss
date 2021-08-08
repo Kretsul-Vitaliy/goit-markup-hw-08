@@ -9,6 +9,7 @@
   // max-width: 1600px;
   // margin: 0px auto;
   &__title {
+    padding-top: 50px;
     margin-bottom: 50px;
   }
   &__list {
@@ -22,7 +23,7 @@
     }
     @media screen and (min-width: $desktop) {
       display: flex;
-      padding-top: 94px;
+      // padding-top: 94px;
       padding-bottom: 94px;
     }
   }
