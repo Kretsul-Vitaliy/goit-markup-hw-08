@@ -1,11 +1,17 @@
 //Форма подпишить на рассылку
 .footer__form-box {
   @media screen and (min-width: $desktop) {
-    margin-left: 93px;
-  }
+    // margin-left: 93px;
 
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
   /* width: 570px; */
-  width: 100%;
+  // width: 100%;
   .footer__form-title {
     font-style: normal;
     font-weight: bold;
@@ -14,6 +20,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $footer-form-title-color;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   .footer__form-icon {
@@ -22,8 +32,9 @@
   }
 
   .footer__form-sendbtn {
+    display: flex;
     padding: 10px 29px;
-    margin-left: 12px;
+
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
@@ -37,17 +48,18 @@
     border-radius: 4px;
     border: 1px solid transparent;
     transition: background-color 250ms $transition-timing-function;
-
+    margin: 0px auto 0px auto;
     &:hover,
     &:focus {
       background-color: $cursor-button-color;
     }
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
+
+    @media screen and (max-width: 1199px) {
+      margin-top: 20px;
     }
     @media screen and (min-width: $desktop) {
-      display: flex;
+      margin-top: 0px;
+      margin-left: 12px;
     }
   }
   .footer__form-input {
@@ -76,9 +88,11 @@
     @media screen and (min-width: $mobile) {
     }
     @media screen and (min-width: $tablet) {
+      width: 450px;
     }
     @media screen and (min-width: $desktop) {
       display: flex;
+      width: 100%;
     }
   }
 
@@ -90,9 +104,27 @@
     @media screen and (min-width: $desktop) {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      width: 270px;
     }
   }
   .footer__form-send {
-    margin-top: 20px;
+    @media screen and (max-width: 1199px) {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer__contacts-wrapper {
+  @media screen and (min-width: 1200px) {
+    // margin-right: 93px;
   }
 }

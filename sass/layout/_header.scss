@@ -19,7 +19,7 @@
       height: 60px;
     }
     @media screen and (min-width: $tablet) {
-      height: 60px;
+      height: 80px;
     }
     @media screen and (min-width: $desktop) {
       display: flex;
@@ -133,7 +133,9 @@
     transition: fill 250ms $transition-timing-function;
   }
   &__contact-list &__contact-item + &__contact-item {
-    margin-left: 50px;
+    @media screen and(min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
 }
 

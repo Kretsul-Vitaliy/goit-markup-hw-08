@@ -21,6 +21,11 @@
     text-transform: uppercase;
     color: $title-white-color;
     margin-bottom: 30px;
+
+    @media (max-width: 359px) {
+      /* 30px - 24px */
+      font-size: calc(1.5rem + 6 * (100vw - 320px) / 880);
+    }
   }
   //Кнопка заказать услугу в секции Hero
   &__button {

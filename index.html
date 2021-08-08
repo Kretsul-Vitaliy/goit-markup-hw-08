@@ -411,7 +411,7 @@
                     </li>
                 </ul>
         </section>
-        <!-- Regular customers -->
+        <!-- Regular customers Client -->
         <section class="client">
             <div class="container">
                 <h2 class="client__title title">Постоянные клиенты</h2>
@@ -471,66 +471,69 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer__box">
-            <div class="footer__adress">
-                <a class="logo footer__logo" href="./index.html"><span class="logo--footer-first">Web</span><span class="logo--footer-second">Studio</span></a>
-                <address>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="https://goo.gl/maps/SxN2yB6NeiDHtefY7" class="footer__map" target="_blank"
-                                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="footer__contacts-wrapper">
+                <div class="footer__adress">
+                    <a class="logo footer__logo" href="./index.html"><span class="logo--footer-first">Web</span><span class="logo--footer-second">Studio</span></a>
+                    <address>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="https://goo.gl/maps/SxN2yB6NeiDHtefY7" class="footer__map" target="_blank"
+                                    rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="mailto:info@example.com" class="footer__link">info@example.com</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel:+380991111111" class="footer__link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social-name">Присоединяйтесь</p>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="">
+                                <svg class="footer__social-icon" width="20px" height="20px">
+                                    <use xlink:href="./images/icons.svg#icon-instagram1"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="mailto:info@example.com" class="footer__link">info@example.com</a>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="">
+                                <svg class="footer__social-icon" width="20px" height="20px">
+                                    <use xlink:href="./images/icons.svg#icon-twitter1"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="tel:+380991111111" class="footer__link">+38 099 111 11 11</a>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="">
+                                <svg class="footer__social-icon" width="20px" height="20px">
+                                    <use xlink:href="./images/icons.svg#icon-facebook1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="">
+                                <svg class="footer__social-icon" width="20px" height="20px">
+                                    <use xlink:href="./images/icons.svg#icon-linkedin1"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__social">
-                <p class="footer__social-name">Присоединяйтесь</p>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="">
-                            <svg class="footer__social-icon" width="20px" height="20px">
-                                <use xlink:href="./images/icons.svg#icon-instagram1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="">
-                            <svg class="footer__social-icon" width="20px" height="20px">
-                                <use xlink:href="./images/icons.svg#icon-twitter1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="">
-                            <svg class="footer__social-icon" width="20px" height="20px">
-                                <use xlink:href="./images/icons.svg#icon-facebook1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="">
-                            <svg class="footer__social-icon" width="20px" height="20px">
-                                <use xlink:href="./images/icons.svg#icon-linkedin1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer__form-box">
                 <p class="footer__form-title">Подпишитесь на рассылку</p>
                 <form class="footer__form-send" action="" method="POST" autocomplete="off">
-                    <div class="footer__form-boxsend">
+                    <label class="footer__form-boxsend">
                         <input class="footer__form-input" type="email" id="email" placeholder="E-mail" required>
-                        <button class="footer__form-sendbtn" type="submit">Подписаться
+                        
+                    </label>
+                    <button class="footer__form-sendbtn" type="submit">Подписаться
                             <svg class="footer__form-icon" width="24px" height="24px">
                                 <use xlink:href="./images/icons.svg#icon-icon-send"></use>
                             </svg></button>
-                    </div>
                 </form>
             </div>
         </div>
