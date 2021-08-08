@@ -3,7 +3,7 @@
   background: {
     color: $hero-background-color;
     image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./images/mobile/hero/bg-main.jpg);
+      url(.//images/mobile/hero/bg-main.jpg);
     size: cover;
   }
   padding-top: 118px;
@@ -63,7 +63,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/mobile/hero/bg-main@2x.jpg);
+      url(/images/mobile/hero/bg-main@2x.jpg);
   }
   //Tablet
   @media screen and (min-width: 481px) {
