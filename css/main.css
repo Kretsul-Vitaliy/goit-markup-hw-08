@@ -1380,6 +1380,7 @@ img {
   .team__list {
     display: flex;
     padding-bottom: 94px;
+    max-width: 1200px;
   }
 }
 
@@ -1551,7 +1552,6 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
   margin: 0px auto;
 }
 
