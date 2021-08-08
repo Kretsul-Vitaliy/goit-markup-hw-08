@@ -7,13 +7,13 @@
   color: $title-white-color;
 }
 .footer__social-list {
+  display: flex;
+  margin-top: 20px;
   @media screen and (min-width: $mobile) {
   }
   @media screen and (min-width: $tablet) {
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
-    margin-top: 20px;
   }
 }
 
