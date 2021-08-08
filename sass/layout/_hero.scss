@@ -22,9 +22,11 @@
     color: $title-white-color;
     margin-bottom: 30px;
 
-    @media (max-width: 359px) {
+    @media (max-width: 390px) {
       /* 30px - 24px */
-      font-size: calc(1.5rem + 6 * (100vw - 320px) / 880);
+      // font-size: calc(1.5rem + 6 * (100vw - 390px) / 880);
+      font-size: 8vw;
+      line-height: 1.5;
     }
   }
   //Кнопка заказать услугу в секции Hero

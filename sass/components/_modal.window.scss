@@ -30,7 +30,11 @@
 
   // @media screen and (min-width: $mobile) {
   // }
-  @media screen and (max-width: $tablet) {
+  @media (max-width: 390px) {
+    width: 350px;
+    height: 609px;
+  }
+  @media screen and (min-width: $tablet) {
     width: 450px;
     height: 609px;
   }
@@ -150,6 +154,11 @@
     display: block;
     border-radius: 2px;
     margin-right: 8px;
+
+    @media (max-width: 390px) {
+      width: 20px;
+      height: 15px;
+    }
   }
 
   &__checkbox-input:focus + &__modal-checkbox {
