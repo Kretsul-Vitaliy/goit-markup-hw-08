@@ -237,7 +237,10 @@
 
   &__link:hover,
   &_link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
+  }
+  .nav-list__link--active {
+    color: $accent-color;
   }
 
   @media screen and (min-width: 767px) {

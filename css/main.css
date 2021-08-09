@@ -923,7 +923,11 @@ img {
 }
 
 .nav-list__link:hover, .nav-list_link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
+}
+
+.nav-list .nav-list__link--active {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 767px) {
