@@ -1,3 +1,9 @@
+.footer__social {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
 .footer__social-name {
   font-weight: 700;
   font-size: 14px;

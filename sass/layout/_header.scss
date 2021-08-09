@@ -146,7 +146,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms $transition-timing-function;
   position: absolute;
   right: 22px;
 
@@ -173,8 +173,8 @@
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms $transition-timing-function,
+    visibility 250ms $transition-timing-function;
 
   &__container {
     display: flex;
@@ -207,7 +207,7 @@
   right: 15px;
   background-color: $button-white-color;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms $transition-timing-function;
 
   &:focus,
   &:hover {
@@ -232,7 +232,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #212121;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms $transition-timing-function;
   }
 
   &__link:hover,
@@ -273,7 +273,7 @@
     }
 
     &--mail {
-      @include fontStyle(24px, null, var(--primary-text-color), 0.02em);
+      @include fontStyle(24px, null, $text-color, 0.02em);
     }
   }
 
@@ -367,22 +367,22 @@
 }
 
 .contacts__link {
-  @include fontStyle(12px, 1.16, var(--primary-text-color), 0.02em, 500);
+  @include fontStyle(12px, 1.16, $text-color, 0.02em, 500);
   @extend %link;
 
   @media screen and (min-width: 1200px) {
-    @include fontStyle(14px, 1.14, var(--primary-text-color), 0.02em, 500);
+    @include fontStyle(14px, 1.14, $text-color, 0.02em, 500);
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $transition-timing-function;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   @media screen and (max-width: 767px) {
     display: none;
