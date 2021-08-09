@@ -396,16 +396,23 @@ summary {
   border-radius: 4px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 390px) {
   .modal-window {
     width: 350px;
     height: 609px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 391px) {
   .modal-window {
     width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-window {
+    width: 400px;
     height: 609px;
   }
 }

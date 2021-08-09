@@ -30,12 +30,16 @@
 
   // @media screen and (min-width: $mobile) {
   // }
-  @media (max-width: 767px) {
+  @media (max-width: 390px) {
     width: 350px;
     height: 609px;
   }
-  @media screen and (min-width: $tablet) {
+  @media (min-width: 391px) {
     width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 400px;
     height: 609px;
   }
   @media screen and (min-width: $desktop) {
