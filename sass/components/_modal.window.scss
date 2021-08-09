@@ -173,7 +173,7 @@
   &__checkbox-input:checked + &__modal-checkbox {
     background-color: $accent-color;
     background-image: url(../images/svg/modal_form/vector.svg);
-    border-color: transparent;
+    border-color: red;
     background-repeat: no-repeat;
     background-position: center;
     background-origin: border-box;
