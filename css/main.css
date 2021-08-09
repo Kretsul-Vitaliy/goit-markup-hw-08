@@ -404,7 +404,7 @@ summary {
   }
 }
 
-@media (min-width: 391px) {
+@media screen and (min-width: 391px) {
   .modal-window {
     width: 400px;
     height: 581px;
@@ -550,7 +550,7 @@ summary {
   }
 }
 
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   .modal-form__modal-checkbox {
     width: 16px;
     height: 15px;
