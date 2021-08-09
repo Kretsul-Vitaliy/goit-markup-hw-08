@@ -1,14 +1,11 @@
 //Форма подпишить на рассылку
 .footer__form-box {
   @media screen and (min-width: $desktop) {
-    // margin-left: 93px;
-
-    position: absolute;
-    right: 20px;
-    top: 30px;
+    //  второй вариант выравнивания нужно убрать из footer- justify-content space between
+    // margin-left: auto;
   }
   @media screen and (max-width: 1199px) {
-    padding-top: 60px;
+    margin-top: 60px;
   }
   /* width: 570px; */
   // width: 100%;

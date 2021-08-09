@@ -1,6 +1,8 @@
 .team {
   // Изменяет фон
   background-color: $portfolio-button-color;
+  padding-bottom: 94px;
+  padding-top: 94px;
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -9,7 +11,7 @@
   // max-width: 1600px;
   // margin: 0px auto;
   &__title {
-    padding-top: 50px;
+    // padding-top: 50px;
     margin-bottom: 50px;
   }
   &__list {
@@ -18,12 +20,14 @@
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
+      margin: -15px;
     }
     @media screen and (min-width: $desktop) {
       display: flex;
+      margin: -15px;
       // padding-top: 94px;
-      padding-bottom: 94px;
-      max-width: 1200px;
+      // padding-bottom: 94px;
+      // max-width: 1200px;
     }
   }
 
@@ -34,12 +38,16 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media (max-width: 390px) {
-      margin-bottom: 30px;
+    // @media (max-width: 390px) {
+    //   margin-bottom: 30px;
+    // }
+    // Почему то здесь не работает на 767px
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
-    @media screen and (min-width: $mobile) {
-      margin-bottom: 30px;
-    }
+
     @media screen and (min-width: 768px) {
       margin: 15px;
       width: calc((100% - 4 * 15px) / 2);

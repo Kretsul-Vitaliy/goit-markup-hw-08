@@ -1,10 +1,12 @@
 .portfolio {
   @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
+    padding-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -40,7 +42,12 @@
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-bottom: 40px;
+  }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -52,13 +59,27 @@
   }
 }
 
-.portfolio__item-btn {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+@media screen and (min-width: $mobile) {
+}
 
+@media screen and (min-width: $tablet) and (min-width: $desktop) {
+}
+
+.portfolio__item-btn {
   @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 }
 .portfolio__item-btn--active button {
@@ -68,8 +89,8 @@
 .portfolio__industries-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  // margin-left: -30px;
+  // margin-top: -30px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: -15px;
@@ -82,10 +103,6 @@
   }
 }
 .portfolio__industries-item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     margin: 15px;
@@ -98,8 +115,8 @@
     margin-top: 30px;
   }
 
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
@@ -108,9 +125,9 @@
     display: flex;
     flex-direction: column;
   }
-
-  margin-left: 30px;
-  margin-top: 30px;
+  // ---------------------------
+  // margin-left: 30px;
+  // margin-top: 30px;
   box-shadow: none;
   //   //Добавляем анимацию
   transition: box-shadow 250ms $transition-timing-function;
@@ -159,7 +176,7 @@
 }
 
 .portfolio__title {
-  @include fontStyle(18px, 2, var(--title-text-color), 0.06em, 700);
+  @include fontStyle(18px, 2, $text-color, 0.06em, 700);
   //   font-style: normal;
   //   font-weight: bold;
   //   font-size: 18px;
@@ -176,7 +193,7 @@
 }
 
 .portfolio__classification {
-  @include fontStyle(16px, 1.87, var(--primary-text-color), 0.03em);
+  @include fontStyle(16px, 1.87, $portfolio-color-title, 0.03em);
   //   font-style: normal;
   //   font-weight: normal;
   //   font-size: 16px;

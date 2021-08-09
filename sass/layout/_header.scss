@@ -15,7 +15,7 @@
     align-items: center;
 
     // justify-content: center;
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
       height: 60px;
     }
     @media screen and (min-width: $tablet) {
@@ -88,7 +88,7 @@
     }
     @media screen and (min-width: $desktop) {
       display: flex;
-      margin-left: auto;
+      // margin-left: auto;
       align-items: center;
     }
   }
@@ -105,7 +105,7 @@
         margin-right: 50px;
       }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.5px) {
       display: none;
     }
   }
@@ -132,11 +132,11 @@
     // Добавляем анимацию
     transition: fill 250ms $transition-timing-function;
   }
-  &__contact-list &__contact-item + &__contact-item {
-    @media screen and(min-width: 1200px) {
-      margin-left: 50px;
-    }
-  }
+  // &__contact-list &__contact-item + &__contact-item {
+  //   @media screen and(min-width: 1200px) {
+  //     margin-left: 50px;
+  //   }
+  // }
 }
 
 .burger-btn {
