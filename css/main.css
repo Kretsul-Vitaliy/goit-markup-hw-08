@@ -556,7 +556,7 @@ summary {
 .modal-form__checkbox-input:checked + .modal-form__modal-checkbox {
   background-color: #2196f3;
   background-image: url(../images/svg/modal_form/vector.svg);
-  border-color: red;
+  border-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-origin: border-box;
