@@ -399,14 +399,15 @@ summary {
 @media (max-width: 390px) {
   .modal-window {
     width: 350px;
-    height: 609px;
+    height: 581px;
+    overflow: scroll;
   }
 }
 
 @media (min-width: 391px) {
   .modal-window {
     width: 400px;
-    height: 609px;
+    height: 581px;
   }
 }
 
@@ -554,7 +555,7 @@ summary {
 
 .modal-form__checkbox-input:checked + .modal-form__modal-checkbox {
   background-color: #2196f3;
-  background-image: url(/images/svg/modal_form/vector.svg);
+  background-image: url(../images/svg/modal_form/vector.svg);
   border-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
