@@ -35,7 +35,7 @@
     height: 581px;
     overflow: scroll;
   }
-  @media screen and (min-width: 391px) {
+  @media screen and (min-width: 391px) and (max-width: 767px) {
     width: 400px;
     height: 581px;
     overflow: scroll;
@@ -43,6 +43,7 @@
   @media screen and (min-width: $tablet) {
     width: 450px;
     height: 609px;
+    overflow: auto;
   }
   @media screen and (min-width: $desktop) {
     width: 528px;
